@@ -1,0 +1,10 @@
+adansdasdmao
+asndiansida
+
+2026-09-25T13:59:37 - Sistema iniciado
+123123
+2026-09-25T14:00:15 - Sistema iniciado
+464654654652026-09-25T14:00:48 - Sistema iniciado
+2026-09-25T14:20:53 - Creados turnos 1, 2, 3
+2026-09-25T14:20:53 - Llamado turno 1
+2026-09-25T14:20:53 - Atendido turno 1

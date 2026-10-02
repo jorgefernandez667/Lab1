@@ -1,0 +1,8 @@
+turnos\modelo\EstadoTurno.class
+turnos\persistencia\TurnoRepository.class
+turnos\persistencia\ArchivoTurnoRepository.class
+turnos\servicio\TurnoService.class
+turnos\persistencia\Historial.class
+turnos\persistencia\PersistenciaException.class
+turnos\modelo\Turno.class
+turnos\app\Main.class
