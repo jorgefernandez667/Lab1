@@ -1,0 +1,256 @@
+/* =====================================================================
+   Gestión de Turnos – hoja de estilos (JavaFX CSS)
+   En JavaFX las propiedades llevan el prefijo -fx-
+   ===================================================================== */
+
+/* ---------- Colores base (variables "looked-up") ---------- */
+.root {
+    -color-primario: #2563eb;
+    -color-primario-oscuro: #1d4ed8;
+    -color-fondo: #f1f5f9;
+    -color-superficie: #ffffff;
+    -color-borde: #e2e8f0;
+    -color-texto: #0f172a;
+    -color-texto-suave: #64748b;
+    -color-peligro: #dc2626;
+
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -fx-font-size: 13px;
+}
+
+.raiz {
+    -fx-background-color: -color-fondo;
+}
+
+/* ---------- Encabezado ---------- */
+.encabezado {
+    -fx-background-color: linear-gradient(to right, #1e3a8a, #2563eb);
+    -fx-padding: 16 24 16 24;
+}
+
+.titulo {
+    -fx-text-fill: white;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+.subtitulo {
+    -fx-text-fill: #bfdbfe;
+    -fx-font-size: 12px;
+}
+
+.insignia-origen {
+    -fx-background-color: rgba(255, 255, 255, 0.18);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 6 14 6 14;
+    -fx-background-radius: 999;
+}
+
+/* ---------- Panel lateral ---------- */
+.panel-lateral {
+    -fx-background-color: -color-superficie;
+    -fx-border-color: transparent -color-borde transparent transparent;
+    -fx-padding: 20;
+    -fx-pref-width: 270;
+}
+
+.seccion-titulo {
+    -fx-text-fill: -color-texto-suave;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+.seccion-titulo-grande {
+    -fx-text-fill: -color-texto;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+/* ---------- Tarjeta del turno en atención ---------- */
+.tarjeta {
+    -fx-background-color: -color-superficie;
+    -fx-background-radius: 12;
+    -fx-border-color: -color-borde;
+    -fx-border-radius: 12;
+    -fx-padding: 16;
+}
+
+.tarjeta-destacada {
+    -fx-background-color: #eff6ff;
+    -fx-border-color: #bfdbfe;
+}
+
+.tarjeta-titulo {
+    -fx-text-fill: -color-primario;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+.numero-actual {
+    -fx-text-fill: -color-texto;
+    -fx-font-size: 48px;
+    -fx-font-weight: bold;
+}
+
+.tarjeta-detalle {
+    -fx-text-fill: -color-texto-suave;
+}
+
+/* ---------- Botones ---------- */
+.boton {
+    -fx-background-radius: 8;
+    -fx-padding: 9 14 9 14;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.boton-primario {
+    -fx-background-color: -color-primario;
+    -fx-text-fill: white;
+}
+
+.boton-primario:hover {
+    -fx-background-color: -color-primario-oscuro;
+}
+
+.boton-secundario {
+    -fx-background-color: -color-superficie;
+    -fx-text-fill: -color-texto;
+    -fx-border-color: -color-borde;
+    -fx-border-radius: 8;
+}
+
+.boton-secundario:hover {
+    -fx-background-color: #f8fafc;
+    -fx-border-color: #cbd5e1;
+}
+
+.boton-peligro {
+    -fx-background-color: #fef2f2;
+    -fx-text-fill: -color-peligro;
+    -fx-border-color: #fecaca;
+    -fx-border-radius: 8;
+}
+
+.boton-peligro:hover {
+    -fx-background-color: #fee2e2;
+}
+
+.boton:pressed {
+    -fx-translate-y: 1;
+}
+
+/* ---------- Contadores por estado ---------- */
+.contador {
+    -fx-background-radius: 8;
+    -fx-padding: 8 10 8 10;
+}
+
+.contador-numero {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.contador-nombre {
+    -fx-font-size: 11px;
+}
+
+/* ---------- Panel central y tabla ---------- */
+.panel-central {
+    -fx-padding: 20 24 20 24;
+}
+
+.etiqueta {
+    -fx-text-fill: -color-texto-suave;
+}
+
+.filtro {
+    -fx-background-color: -color-superficie;
+    -fx-border-color: -color-borde;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-pref-width: 150;
+}
+
+.tabla {
+    -fx-background-color: -color-superficie;
+    -fx-background-radius: 10;
+    -fx-border-color: -color-borde;
+    -fx-border-radius: 10;
+    -fx-padding: 4;
+}
+
+.tabla .column-header-background {
+    -fx-background-color: -color-superficie;
+}
+
+.tabla .column-header {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent -color-borde transparent;
+    -fx-padding: 8 4 8 4;
+}
+
+.tabla .column-header .label {
+    -fx-text-fill: -color-texto-suave;
+    -fx-font-weight: bold;
+    -fx-alignment: center-left;
+}
+
+.tabla .table-row-cell {
+    -fx-background-color: -color-superficie;
+    -fx-border-color: transparent transparent #f1f5f9 transparent;
+    -fx-cell-size: 42px;
+}
+
+.tabla .table-row-cell:hover {
+    -fx-background-color: #f8fafc;
+}
+
+.tabla .table-row-cell:selected {
+    -fx-background-color: #dbeafe;
+}
+
+.tabla .table-cell {
+    -fx-text-fill: -color-texto;
+    -fx-padding: 0 12 0 12;
+    -fx-alignment: center-left;
+}
+
+.tabla .columna-numero.table-cell {
+    -fx-font-weight: bold;
+}
+
+/* ---------- Insignias de estado (tabla) ---------- */
+.insignia-estado {
+    -fx-background-radius: 999;
+    -fx-padding: 3 12 3 12;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+/* Un color por estado: se usan en la tabla y en los contadores */
+.estado-pendiente  { -fx-background-color: #fef3c7; }
+.estado-llamado    { -fx-background-color: #dbeafe; }
+.estado-atendido   { -fx-background-color: #dcfce7; }
+.estado-cancelado  { -fx-background-color: #f1f5f9; }
+
+.estado-pendiente .label, .insignia-estado.estado-pendiente { -fx-text-fill: #92400e; }
+.estado-llamado .label,   .insignia-estado.estado-llamado   { -fx-text-fill: #1e40af; }
+.estado-atendido .label,  .insignia-estado.estado-atendido  { -fx-text-fill: #166534; }
+.estado-cancelado .label, .insignia-estado.estado-cancelado { -fx-text-fill: #475569; }
+
+/* ---------- Barra de estado (mensajes) ---------- */
+.barra-estado {
+    -fx-background-color: -color-superficie;
+    -fx-border-color: -color-borde transparent transparent transparent;
+    -fx-padding: 10 24 10 24;
+}
+
+.mensaje {
+    -fx-font-weight: bold;
+}
+
+.mensaje-exito       { -fx-text-fill: #15803d; }
+.mensaje-advertencia { -fx-text-fill: #b45309; }
+.mensaje-error       { -fx-text-fill: -color-peligro; }

@@ -1,0 +1,15 @@
+# Maven
+target/
+
+# NetBeans (nbactions.xml puede contener contraseñas en variables de entorno)
+nbproject/private/
+nbactions.xml
+nb-configuration.xml
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos locales de configuración con credenciales
+*.env
+db.properties

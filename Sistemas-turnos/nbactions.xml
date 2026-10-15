@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>run</actionName>
+            <packagings>
+                <packaging>jar</packaging>
+            </packagings>
+            <goals>
+                <goal>process-classes</goal>
+                <goal>org.codehaus.mojo:exec-maven-plugin:3.6.3:exec</goal>
+            </goals>
+            <properties>
+                <exec.vmArgs></exec.vmArgs>
+                <exec.args>${exec.vmArgs} -classpath %classpath ${exec.mainClass} ${exec.appArgs}</exec.args>
+                <exec.appArgs></exec.appArgs>
+                <exec.mainClass>${packageClassName}</exec.mainClass>
+                <exec.executable>java</exec.executable>
+                <Env.PG_URL>jdbc:postgresql://1.pgsqlserver.com:5432/gamabasis_jorge01</Env.PG_URL>
+                <Env.PG_USER>gamabasis_jorge01</Env.PG_USER>
+                <Env.PG_PASSWORD>1iU66YmdH!</Env.PG_PASSWORD>
+            </properties>
+        </action>
+        <action>
+            <actionName>run.single.main</actionName>
+            <packagings>
+                <packaging>*</packaging>
+            </packagings>
+            <goals>
+                <goal>process-classes</goal>
+                <goal>org.codehaus.mojo:exec-maven-plugin:3.6.3:exec</goal>
+            </goals>
+            <properties>
+                <exec.vmArgs></exec.vmArgs>
+                <exec.args>${exec.vmArgs} -classpath %classpath ${exec.mainClass} ${exec.appArgs}</exec.args>
+                <exec.executable>java</exec.executable>
+                <exec.mainClass>${packageClassName}</exec.mainClass>
+                <exec.classpathScope>${classPathScope}</exec.classpathScope>
+                <Env.PG_URL>jdbc:postgresql://1.pgsqlserver.com:5432/gamabasis_jorge01</Env.PG_URL>
+                <Env.PG_USER>gamabasis_jorge01</Env.PG_USER>
+                <Env.PG_PASSWORD>1iU66YmdH!</Env.PG_PASSWORD>
+            </properties>
+        </action>
+    </actions>
